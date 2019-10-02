@@ -87,6 +87,8 @@ form {
     background-color: orange;
     border: none;
     position: sticky;
+    content: none;
+    
     
 }
 
