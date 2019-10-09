@@ -275,6 +275,7 @@ td {
     display: grid;
     grid-column-gap: 50px;
     float: left;
+    display: flex;
     
 }
 
@@ -288,8 +289,40 @@ td {
     width: 100%;
     display: block;
     float: left;
+    padding: 5%;
+    margin-left: 5%;
+/*
     padding-bottom: 6%;
     padding-left: 6%;
+*/
+}
+
+#active {
+    background-color: mediumpurple;
+}
+
+.blackberrybunphoto {
+    width: 40%;
+    float: left;
+    margin-left: 3%;
+    margin-top: 6.5%;
+    
+}
+
+.blackberrybunphoto img {
+    max-width: 100%;
+
+
+}
+
+.photo-slide img {
+    width: 22%;
+    padding: 1%;
+}
+
+.description {
+    width: 65%;
+    float: left;
 }
 
 
