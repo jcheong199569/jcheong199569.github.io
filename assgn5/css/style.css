@@ -280,7 +280,7 @@ td {
 }
 
 .otherbuns {
-    width: 10%;
+    width: 8%;
     margin-top: 60px;
     
 }
@@ -302,10 +302,10 @@ td {
 }
 
 .blackberrybunphoto {
-    width: 40%;
+    width: 35%;
     float: left;
     margin-left: 3%;
-    margin-top: 6.5%;
+    margin-top: 4.5%;
     
 }
 
@@ -323,13 +323,66 @@ td {
 .description {
     width: 65%;
     float: left;
+    margin-left: 2%;
+    margin-top: 4.5%;
+    
+}
+
+.description p {
+    width: 50%;
+}
+
+#buntitle {
+    font-size: 3em;
+    color: rgb(255, 70, 66);
+    margin-bottom: 1%;
+    
+    
+    
+}
+
+#calories {
+    color: darkgray;
+    font-size: 1.2em;
+    margin-bottom: 3%;
+    font-weight: lighter;
+}
+
+#detail {
+    font-size: .9em;
+    margin-bottom: 5%;
 }
 
 
+.form {    
+}
 
+#criterion {
+    font-weight: bold;
+    margin: none;
+}
 
+.price {
+    width: 100px;
+}
 
+#number {
+    width: 100px;
+}
 
+#qt {
+    font-size: 13px;
+    background-color: aliceblue;
+    width: 50px;
+    border: none;
+}
 
-
+#addtocart {
+    margin-top: 50%;
+    width: 120px;
+    height:40px;
+    border-radius: 15px;
+    background-color: rgb(255, 223, 116);
+    border-color: rosybrown;
+}
 

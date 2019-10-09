@@ -44,22 +44,26 @@
             
             </div>
             <div class="description">
-                <p>Blackberry Cinnamon Bun</p>
-                <p>220 kcal/bun</p>
-                <p>
-                    A delicious spring twist, these Blackberry Cinnamon Rolls will be your new favorite breakfast! 
+                <p  id="buntitle">Blackberry Cinnamon Bun</p>
+                <p id="calories">220 kcal/bun</p>
+                <p id="detail">
+                    A delicious spring twist, these Blackberry Cinnamon Rolls will be your new favorite breakfast! <br><br>
                     
                     Blackberries make the old fashioned cinnamon roll that much better! Try our blackberry pecan cinnamon rolls and discover a new family-favorite to enjoy for years to come. 
                 </p>
-                <form>
-                    Price: 4.5$ <br>
-                    Qt: 
-                    <input type="number" value="1" id="qt"> <br>
-                    Glazing <br>
-                    None <input type="radio" id="glazing"> <br>
-                    Sugar Milk <input type="radio" id="glazing"><br>
-                    Vanilla <input type="radio" id="glazing"><br>
-                    Double Chocolate <input type="radio" id="glazing"><br>
+                <form class="form">
+                    <div class="price">
+                        <p id="criterion">Price:</p>
+                        <p id="number"> 4.5$</p> 
+                    </div>
+                    <br>
+                    <p id="criterion">Qt:</p><br>
+                    <input type="number" value="1" id="qt"> <br><br><br>
+                    <p id="criterion">Glazing</p> <br>
+                    <input type="radio" id="glazing"> None   
+                    <input type="radio" id="glazing"> Sugar Milk +.25$ <br><br>
+                    <input type="radio" id="glazing"> Vanilla +.25$
+                    <input type="radio" id="glazing"> Double Chocolate + .50$<br> <br>
                     <input type="button" value="Add to Cart" id="addtocart">
                     
                     
