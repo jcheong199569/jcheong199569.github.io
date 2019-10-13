@@ -1,0 +1,18 @@
+body {
+    color: navy;
+}
+
+#container {
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+}
+
+h1 {
+
+}
+
+#animal-img {
+    border: 10px solid navy;
+    border-radius: 10px;
+}
