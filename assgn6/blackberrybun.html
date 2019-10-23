@@ -15,7 +15,7 @@
                     <img src="image/map-flag.svg" id="menubarflag">
                 </div>
                 <div class="topnav-right">
-                    <a href="html/cart.html"><img src="image/shopping-cart.svg" id="navimg" alt="cart"></a>
+                    <a href="shopping_cart.html"><img src="image/shopping-cart.svg" id="navimg" alt="cart"></a>
                     <a>Log in</a>
                 </div>
             </div>
@@ -45,7 +45,7 @@
             </div>
             <div class="description">
                 <p  id="buntitle">Blackberry Cinnamon Bun</p>
-                <p id="calories">220 kcal/bun</p>
+                <p id="calories">220 cal/bun</p>
                 <p id="detail">
                     A delicious spring twist, these Blackberry Cinnamon Rolls will be your new favorite breakfast! <br><br>
                     
@@ -58,12 +58,17 @@
                     </div>
                     <br>
                     <p id="criterion">Qt:</p><br>
-                    <input type="number" value="1" id="qt"> <br><br><br>
+                    <select id="qt" onchange="priceFunction()">
+                        <option value="1">1</option>
+                        <option value="3">3</option>
+                        <option value="6">6</option>
+                        <option value="12">12</option>
+                    </select> <br><br><br>
                     <p id="criterion">Glazing</p> <br>
-                    <input type="radio" id="glazing"> None   
-                    <input type="radio" id="glazing"> Sugar Milk +.25$ <br><br>
-                    <input type="radio" id="glazing"> Vanilla +.25$
-                    <input type="radio" id="glazing"> Double Chocolate + .50$<br> <br>
+                    <input type="radio" id="glazing" name="choice" checked="checked"> None   
+                    <input type="radio" id="glazing" name="choice"> Sugar Milk +.25$ <br><br>
+                    <input type="radio" id="glazing" name="choice"> Vanilla +.25$
+                    <input type="radio" id="glazing" name="choice"> Double Chocolate + .50$<br> <br>
                     <input type="button" value="Add to Cart" id="addtocart">
                     
                     
@@ -80,6 +85,7 @@
 
         
         </div>
+        <script src="script.js" type="text/javascript"></script>
     </body>
     <footer id="menupagebottom">
     </footer>
