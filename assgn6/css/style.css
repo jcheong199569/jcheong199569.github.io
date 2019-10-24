@@ -408,8 +408,8 @@ td {
     top: .5%;
     right: 0.6%;
     color: rgb(255, 187, 0);
-    background-color: rgba(0, 0, 0, 0.3);
-    border-radius: 40%;
+    /* background-color: rgba(0, 0, 0, 0.3); */
+    /* border-radius: 40%; */
     font-weight: bold;
     
 }
