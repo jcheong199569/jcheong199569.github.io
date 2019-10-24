@@ -19,37 +19,48 @@ nav {
     position: fixed;
 }
 
-nav a {
+.topnav a {
     color: white;
     float:left;
     text-align: center;
-    padding: 12px;
-    margin: 0 20px;
+    padding: 1%;
+    margin-left: 1%;
+}
+
+#about {
+    margin: .5% 0 0 2%;
+    text-decoration: none;
 }
 
 .topnav-right {
     float: right;
 }
 
+
 .topnav-right a {
     float:right;
     margin-right: 10px;
 }
 
+#login {
+    position: fixed;
+    right: 4%;
+    top: 1%;
+    font-size: 90%;
+}
+
 #navimg {
     position: fixed;
     width: 2.5%;
-    top: 3px;
-    right: 10px;
+    top: 2%;
+    right: 2%;
 
 }
 
 #navimg1 {
     position: fixed;
-    top: 4px;
-    bottom: 2px;
-    left; 0;
-    width:2.5%;
+    left: 1.5%;
+    height:5%;
     
     
 }
@@ -156,7 +167,12 @@ form {
 
 /*------menu---------*/
 
-
+.addressbar {
+    position: fixed;
+    width: 80%;
+    margin-left: 35%;
+    margin-right: 0;
+}
 
 .addressbar input{
     
@@ -166,7 +182,7 @@ form {
     height: 18px;
     width: 35%;
     border: none;
-    margin-left: 21%;
+    margin-left: 0%;
     border-radius: 3px;
     
 }
@@ -174,8 +190,8 @@ form {
 .addressbar img {
     position: absolute;
     top: 12px;
-    left: 65%;
-    height: 20px;
+    left: 33%;
+    height: 60%;
     
 }
 
@@ -277,7 +293,7 @@ td {
     grid-column-gap: 50px;
     float: left;
     display: flex;
-    
+    margin-top: 2%;
 }
 
 .otherbuns {
@@ -317,7 +333,7 @@ td {
 }
 
 .photo-slide img {
-    width: 22%;
+    width: 21%;
     padding: 1%;
 }
 
@@ -385,6 +401,17 @@ td {
     border-radius: 15px;
     background-color: rgb(255, 223, 116);
     border-color: rosybrown;
+}
+
+#itemNum {
+    position: fixed;
+    top: .5%;
+    right: 0.6%;
+    color: rgb(255, 187, 0);
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 40%;
+    font-weight: bold;
+    
 }
 
 /*/-------------shopping_cart------------/*/
