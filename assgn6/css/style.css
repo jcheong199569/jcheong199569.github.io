@@ -472,7 +472,7 @@ td {
 
 .glazing-type {
     padding-top: 20px;
-    margin-right: 20px;
+    margin-right: 55px;
 }
 
 .quantity {
@@ -484,7 +484,7 @@ td {
     position: relative;
 }
 
-.total-price {
+#total-price {
     width: 83px;
     padding-top: 20px;
     text-align: center;
@@ -494,6 +494,15 @@ td {
 }
 
 .final-price {
-    padding-top: 30px;
-    padding-left: 70%;
+    border-top: 1.5px solid rgba(145, 60, 60, 0.1); 
+    padding-top: 13%;
+    padding-left: 84%;
+    text-align: center;
+    position: flex;
 }
+
+.final-price a {
+    font-size: 20px;
+}
+
+.delete 
