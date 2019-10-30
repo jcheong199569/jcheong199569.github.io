@@ -191,7 +191,12 @@ function updateCart() {
     var x = JSON.parse(localStorage.getItem("selectedProduct"));
     document.getElementById("cart-item-quantity").selectedIndex = x["qty"];
     document.getElementById("glazing-type").selectedIndex = x["glz"];
-    document.getElementById()
+    // document.getElementById("total-price").innerHTML = x["price"];
+    var x1 = document.getElementById("cart-item-quantity").value;
+    var y = document.getElementById("glazing-type").value;
+    var z = document.getElementById("total-price").innerHTML = `${(x1*2.5) + (y*x1)}$`;
+    document.getElementById("subtotal").innerHTML = `${z}`;
+
     
 
 }
