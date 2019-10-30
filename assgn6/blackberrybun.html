@@ -15,7 +15,10 @@
                     <img src="image/map-flag.svg" id="menubarflag">
                 </div>
                 <div class="topnav-right">
-                    <a href="shopping_cart.html"><img src="image/shopping-cart.svg" id="navimg" alt="cart" ></a>
+                    <a href="shopping_cart.html">
+                        <img src="image/shopping-cart.svg" id="navimg" alt="cart" >
+                        <a id="cartcount" href="shopping_cart.html">0</a>
+                    </a>
                     <!-- <a id="itemNum">0</a> -->
                     <a id="login">Log in</a>
                 </div>
@@ -35,7 +38,7 @@
             
             
             <div class="blackberrybunphoto">
-                <img src="image/BlackBerry.png">
+                <img src="image/BlackBerry.png" id="cinnamonbunphoto">
                 <div class="photo-slide">
                     <img src="image/Blackberry1.png">
                     <img src="image/Blackberry2.png">
@@ -79,22 +82,16 @@
                         <input type="radio"  name="choice" value=".25"> Vanilla +.25$
                         <input type="radio" name="choice" value=".5"> Double Chocolate + .50$<br> <br>
                     </div>
-                    <button value="Add to Cart" id="addtocart" onclick="addToCart()" name="Add to Cart">Add to cart</button>
-                    
+                    <div id="addbutton">
+                            <a value="Add to Cart" id="addtocart" onclick="addedToCart()" name="Add to Cart">Add to cart</a>
+                    </div>
                     
                 </form>
-                    
                 
-                
-                
-                
-            
             </div>
             
-            
-
-        
         </div>
+        
         <script src="script.js" type="text/javascript"></script>
     </body>
     <footer id="menupagebottom">

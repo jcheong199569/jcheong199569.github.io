@@ -1,12 +1,22 @@
-var numItems=0
-var shoppingCart=new Object
+var cart=[];
+
+// var x = document.getElementById("cartcount");
+// console.log(x);
+// var y = x+1;
+// console.log(y);
 
 
+function addedToCart(){
+    // alert("Your tasty item has been added to your shopping cart!");
+    var x = document.getElementById("cartcount");
+    document.getElementById("cartcount").innerHTML = x+1;
+    document.getElementById("addtocart").innerHTML = "Proceed to Check Out";
+    var name = document.getElementById("buntitle");
+    localStorage.setItem("bunname", name);
 
-function addToCart(){
-    alert("Your tasty item has been added to your shopping cart!");
+    cart.push(name);
+    console.log(cart);
     
-
 }
 
 
@@ -29,7 +39,7 @@ function priceFunction2(){
     var x = document.getElementById("glazing").value;
     var y = document.getElementById("qt").value;
     var z = document.getElementById("number").value;
-    var price = document.getElementById("number").innerHTML;
+    // var price = document.getElementById("number").innerHTML;
     document.getElementById("number").innerHTML = `${parseInt(x)*parseInt(y)+parseInt(z)}$`;
 }
 
