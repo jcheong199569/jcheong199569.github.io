@@ -180,14 +180,18 @@ function addedToCart(){
         var glindex = document.getElementById("glazing").selectedIndex;
         var glazingtype = document.getElementById("glazing").options[glindex].innerHTML;
 
-        selectedValues = {price: val, qty: quantity, glz: glazingtype};
+        selectedValues = {price: val, qty: qtindex, glz: glindex};
 
         localStorage.setItem("selectedProduct", JSON.stringify(selectedValues));
     }
 }
 
 function updateCart() {
-    x = JSON.parse(localStorage.getItem("selectedProduct"));
+    // console.log("im here");
+    var x = JSON.parse(localStorage.getItem("selectedProduct"));
+    document.getElementById("cart-item-quantity").selectedIndex = x["qty"];
+    document.getElementById("glazing-type").selectedIndex = x["glz"];
+    document.getElementById()
     
 
 }
