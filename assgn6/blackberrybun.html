@@ -17,7 +17,8 @@
                 <div class="topnav-right">
                     <a href="shopping_cart.html">
                         <img src="image/shopping-cart.svg" id="navimg" alt="cart">
-                        <a href=shopping_cart.html id="cartcount">0</a>
+                        <a id="cartcount">0</a> 
+                        <!-- // why is href=shopping-cart.html being printed after click? //  -->
                     </a>
                     <a id="login">Log in</a>
                 </div>
@@ -68,19 +69,21 @@
                         <option value="12">12</option>
                     </select> <br><br><br>
                     <p id="criterion">Glazing</p> <br>
-                    <!-- <select id="glazing" onchange="priceFunction2()">
-                            <option value="0" name="choice" checked="checked">None</option>
-                            <option value=".25" name="choice">Sugar Milk +.25$</option>
-                            <option value=".25" name="choice">Vanilla +.25$</option>
-                            <option value=".5" name="choice">Double Chocolate + .50$</option>
-                    </select> -->
 
-                    <div id="glazing">
+                    <select id="glazing" onchange="priceFunction()">
+                        <option value="0">None</option>
+                        <option value=".25">Sugar Milk +.25$</option>
+                        <option value=".25">Vanilla +.25$</option>
+                        <option value=".5">Double Chocolate + .50$</option>
+                    </select>
+
+                    <!-- <div id="glazing">
                         <input type="radio" name="choice" checked="checked" value="0" onclick="priceFunction2()"> None   
                         <input type="radio"  name="choice" value=".25" onclick="priceFunction2()"> Sugar Milk +.25$ <br><br>
                         <input type="radio"  name="choice" value=".25" onclick="priceFunction2()"> Vanilla +.25$
                         <input type="radio" name="choice" value=".5" onclick="priceFunction2()"> Double Chocolate + .50$<br> <br>
-                    </div>
+                    </div> -->
+
                     <div id="addbutton">
                             <a value="Add to Cart" id="addtocart" onclick="addedToCart()" name="Add to Cart">Add to cart</a>
                     </div>

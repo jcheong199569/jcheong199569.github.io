@@ -69,13 +69,13 @@ nav {
 #cartcount {
     color: white;
     background-color: rgb(255, 197, 88);
-    border: 2px solid rgb(255, 255, 255);
+    border: 1.5px solid rgb(255, 255, 255);
     border-radius: 10px;
-    padding: 4px;
+    padding: 2px;
     position: fixed;
-    size: 1em;
-    top: .75%;
-    right: 1.9%;
+    size: .5em;
+    top: .55%;
+    right: 2.1%;
 }
 
 
@@ -423,16 +423,7 @@ td {
     border: 2px solid rgb(230, 159, 29);
 }
 
-#itemNum {
-    position: fixed;
-    top: .5%;
-    right: 0.6%;
-    color: rgb(255, 187, 0);
-    /* background-color: rgba(0, 0, 0, 0.3); */
-    /* border-radius: 40%; */
-    font-weight: bold;
-    
-}
+
 
 /*/-------------shopping_cart------------/*/
 
