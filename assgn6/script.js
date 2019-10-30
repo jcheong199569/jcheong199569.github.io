@@ -7,7 +7,7 @@ var cart=[];
 
 
 function addedToCart(){
-    // alert("Your tasty item has been added to your shopping cart!");
+    
     var x = document.getElementById("cartcount");
     document.getElementById("cartcount").innerHTML = x+1;
     document.getElementById("addtocart").innerHTML = "Proceed to Check Out";
@@ -16,7 +16,7 @@ function addedToCart(){
 
     cart.push(name);
     console.log(cart);
-    
+    alert("Your tasty item has been added to your shopping cart!");
 }
 
 

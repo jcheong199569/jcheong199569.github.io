@@ -16,10 +16,9 @@
                 </div>
                 <div class="topnav-right">
                     <a href="shopping_cart.html">
-                        <img src="image/shopping-cart.svg" id="navimg" alt="cart" >
-                        <a id="cartcount" href="shopping_cart.html">0</a>
+                        <img src="image/shopping-cart.svg" id="navimg" alt="cart">
+                        <a href=shopping_cart.html id="cartcount">0</a>
                     </a>
-                    <!-- <a id="itemNum">0</a> -->
                     <a id="login">Log in</a>
                 </div>
             </div>
@@ -76,11 +75,11 @@
                             <option value=".5" name="choice">Double Chocolate + .50$</option>
                     </select> -->
 
-                    <div id="glazing" onclick="priceFunction2()">
-                        <input type="radio" name="choice" checked="checked" value="0"> None   
-                        <input type="radio"  name="choice" value=".25"> Sugar Milk +.25$ <br><br>
-                        <input type="radio"  name="choice" value=".25"> Vanilla +.25$
-                        <input type="radio" name="choice" value=".5"> Double Chocolate + .50$<br> <br>
+                    <div id="glazing">
+                        <input type="radio" name="choice" checked="checked" value="0" onclick="priceFunction2()"> None   
+                        <input type="radio"  name="choice" value=".25" onclick="priceFunction2()"> Sugar Milk +.25$ <br><br>
+                        <input type="radio"  name="choice" value=".25" onclick="priceFunction2()"> Vanilla +.25$
+                        <input type="radio" name="choice" value=".5" onclick="priceFunction2()"> Double Chocolate + .50$<br> <br>
                     </div>
                     <div id="addbutton">
                             <a value="Add to Cart" id="addtocart" onclick="addedToCart()" name="Add to Cart">Add to cart</a>
