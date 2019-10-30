@@ -8,6 +8,13 @@ var cart=[];
 
 function addedToCart(){
     
+    var x = 0
+    // localStorage.setItem("cartnumber", x);
+    // if (localStorage.getItem("cartnumber") {
+    //     x = parseInt(localStorage.getItem("cartnumber"))
+    // }
+    // x += 1;
+
     var x = document.getElementById("cartcount");
     document.getElementById("cartcount").innerHTML = x+1;
     document.getElementById("addtocart").innerHTML = "Proceed to Check Out";
@@ -37,10 +44,12 @@ function priceFunction(){
 
 
 
-function shoppingcartItemPrice(){
+function ItemPrice(){
     var x = document.getElementById("cart-item-quantity").value;
-    var itemprice = document.getElementById("total-price").innerHTML;
-    document.getElementById("total-price").innerHTML = `${parseInt(x)*7}$`;
+    var y = document.getElementById("glazing-type").value;
+    var z = (document.getElementById("total-price").innerHTML = `${(x*2.5) + (y*x)}$`);
+    console.log(z);
+    document.getElementById("subtotal").innerHTML = `${z}`;
 }
 
 function glazingPrice(){

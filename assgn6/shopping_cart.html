@@ -54,8 +54,8 @@
                     </div>
                 </div>
 
-                <div class="glazing-type">
-                        <select>
+                <div class="glazing">
+                        <select id="glazing-type" onchange="ItemPrice()">
                             <option value="0"> None </option>
                             <option value="2.5"> Sugar Milk </option>
                             <option value="2.5"> Vanilla </option>
@@ -65,7 +65,7 @@
                     </div>
                 
                 <div class="quantity">
-                    <select id="cart-item-quantity" onchange="shoppingcartItemPrice()">
+                    <select id="cart-item-quantity" onchange="ItemPrice()">
                         <option value="1"> 1 </option>
                         <option value="3"> 3 </option>
                         <option value="6"> 6 </option>
@@ -74,13 +74,13 @@
 
                 </div>
                 
-                <p id="total-price">2.5 $</p>
+                <p id="total-price">2.5$</p>
             </div>
 
             <div class="final-price">
                 <p>Total:</p>
                 <br>
-                <a>20 $</a>
+                <a id="subtotal" onload="ItemPrice()"></a>
             </div>
             <div class="returntoproductpage">
                 <a type="button" name="backtoproduct" href="blackberrybun.html">back to product</a>
