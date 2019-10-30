@@ -7,6 +7,8 @@ var Item = function(name, bunprice, count, glazing, glazingprice) {
     this.glazingprice = glazingprice
 };
 
+
+
 function addItemToCart(name, bunprice, count, glazing, glazingprice) {
     for (var i in cart) {
         if (cart[i].name === name) {
@@ -19,8 +21,13 @@ function addItemToCart(name, bunprice, count, glazing, glazingprice) {
     var item = new Item(name, bunprice, count, glazing, glazingprice);
     cart.push(item);
     saveCart();
+    alert("Your tasty item has been added to your shopping cart!");
+    
 }
 
+function updateData() {
+
+}
 
 
 // console.log(cart);
@@ -149,15 +156,40 @@ function addedToCart(){
     // cart = document.getElementsById("cartcount").innerHTML
     // x += 1
     // cart = x
-    var x = document.getElementById("cartcount");
-    document.getElementById("cartcount").innerHTML = x+1;
-    document.getElementById("addtocart").innerHTML = "Proceed to Check Out";
-    var name = document.getElementById("buntitle");
-    localStorage.setItem("bunname", name);
+    
+    // var name = document.getElementById("buntitle");
+    // localStorage.setItem("bunname", name);
 
-    cart.push(name);
-    console.log(cart);
-    alert("Your tasty item has been added to your shopping cart!");
+    // cart.push(name);
+    // // console.log(cart);
+    var y = (document.getElementById("addtocart")).name;
+    var z = document.getElementById("addtocart");
+    if (y === "Proceed to Check Out") {
+        alert("Your tasy item has already been added!");
+    } else {
+        var x = document.getElementById("cartcount");
+        document.getElementById("cartcount").innerHTML = x+1;
+        
+        document.getElementById("addtocart").innerHTML = "Proceed to Check Out";
+        document.getElementById("addtocart").name.innerHTML = "Proceed to Check Out";
+        alert("Your tasty item has been added to your shopping cart!");
+        
+        var val = document.getElementById("number").innerHTML;
+        var qtindex = document.getElementById("qt").selectedIndex;
+        var quantity = document.getElementById("qt").options[qtindex].innerHTML;
+        var glindex = document.getElementById("glazing").selectedIndex;
+        var glazingtype = document.getElementById("glazing").options[glindex].innerHTML;
+
+        selectedValues = {price: val, qty: quantity, glz: glazingtype};
+
+        localStorage.setItem("selectedProduct", JSON.stringify(selectedValues));
+    }
+}
+
+function updateCart() {
+    x = JSON.parse(localStorage.getItem("selectedProduct"));
+    
+
 }
 
 
