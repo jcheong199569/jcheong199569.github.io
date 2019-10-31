@@ -195,12 +195,18 @@ function updateCart() {
     
 var deletebutton = document.getElementsByClassName("delete-btn");
 for (var i=0; i<deletebutton.length; i++) {
-    var button = deletebutton[i]
+    var button = deletebutton[i];
     button.addEventListener('click', function(event){
-        var buttonClicked = event.target
-        buttonClicked.parentElement.parentElement.parentElement.remove()
+        var buttonClicked = event.target;
+        buttonClicked.parentElement.parentElement.parentElement.remove();
+        document.getElementById("cartcount").innerHTML = 0;
+        document.getElementById("subtotal").innerHTML= 0;
     })
 
+}
+
+function updateCartTotal() {
+    var cartProperties = document.getElementsByClassName("item")
 }
     
 // }
