@@ -135,9 +135,6 @@ loadCart();
 var array = listCart();
 
 
-
-
-
 // var cinnamon = new Item("cinnamon", 1.99, 1);
 
 // cart.push( new Item("apple", 2.13, 1));
@@ -150,18 +147,10 @@ var array = listCart();
 
 
 
-function addedToCart(){
-    // var x = 0
-    // var cart = localStorage.getElementById("cartcount");
-    // cart = document.getElementsById("cartcount").innerHTML
-    // x += 1
-    // cart = x
-    
-    // var name = document.getElementById("buntitle");
-    // localStorage.setItem("bunname", name);
 
-    // cart.push(name);
-    // // console.log(cart);
+
+
+function addedToCart(){
     var y = (document.getElementById("addtocart")).name;
     var z = document.getElementById("addtocart");
     if (y === "Proceed to Check Out") {
@@ -197,18 +186,24 @@ function updateCart() {
     var z = document.getElementById("total-price").innerHTML = `${(x1*2.5) + (y*x1)}$`;
     document.getElementById("subtotal").innerHTML = `${z}`;
 
-    
-
 }
 
 
 
 
-function removeCartItem(){
-    var x = document.getElementsByClassName("delete-btn");
+// function removeCartItem(){
     
-}
+var deletebutton = document.getElementsByClassName("delete-btn");
+for (var i=0; i<deletebutton.length; i++) {
+    var button = deletebutton[i]
+    button.addEventListener('click', function(event){
+        var buttonClicked = event.target
+        buttonClicked.parentElement.parentElement.parentElement.remove()
+    })
 
+}
+    
+// }
 
 function priceFunction(){
     var x = document.getElementById("qt").value;
@@ -223,7 +218,6 @@ function ItemPrice(){
     var x = document.getElementById("cart-item-quantity").value;
     var y = document.getElementById("glazing-type").value;
     var z = (document.getElementById("total-price").innerHTML = `${(x*2.5) + (y*x)}$`);
-    console.log(z);
     document.getElementById("subtotal").innerHTML = `${z}`;
 }
 

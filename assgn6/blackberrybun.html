@@ -55,19 +55,14 @@
                     
                     Blackberries make the old fashioned cinnamon roll that much better! Try our blackberry pecan cinnamon rolls and discover a new family-favorite to enjoy for years to come. 
                 </p>
-                <form class="form">
-                    <div class="price">
-                        <p id="criterion">Price:</p>
-                        <p id="number"> 2.5$</p> 
-                    </div>
-                    <br>
+                <form class="form"></form>
                     <p id="criterion">Qt:</p><br>
                     <select id="qt" onchange="priceFunction()">
                         <option value="1">1</option>
                         <option value="3">3</option>
                         <option value="6">6</option>
                         <option value="12">12</option>
-                    </select> <br><br><br>
+                    </select> <br><br>
                     <p id="criterion">Glazing</p> <br>
 
                     <select id="glazing" onchange="priceFunction()">
@@ -76,6 +71,13 @@
                         <option value=".25">Vanilla +.25$</option>
                         <option value=".5">Double Chocolate + .50$</option>
                     </select>
+                    <br>
+                    <br>
+                    <div class="price">
+                        <p id="criterion">Subtotal:</p>
+                        <br>
+                        <p id="number"> 2.5$</p> 
+                    </div>
 
                     <!-- <div id="glazing">
                         <input type="radio" name="choice" checked="checked" value="0" onclick="priceFunction2()"> None   
@@ -96,7 +98,10 @@
         
         <script src="script.js" type="text/javascript"></script>
     </body>
-    <footer id="menupagebottom">
+    <footer>
+        <div id="menupagebottom">
+
+        </div>
     </footer>
 </html>
 

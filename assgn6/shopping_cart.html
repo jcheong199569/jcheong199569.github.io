@@ -13,15 +13,16 @@
                 <a href="html/about.html" id="about">About</a>
                 <div class="topnav-right">
                     <a href="shopping_cart.html"><img src="image/shopping-cart.svg" id="navimg" alt="cart"></a>
+                    <a id="cartcount">1</a> 
                     <a id="login">Log in</a>
                 </div>
             </div>
         </nav>
     </header>
     
-    <body onload="updateCart()">
+    <body onload="updateCart()"> 
+        <!-- onload it will update the quantity, glaze type, and the price.  -->
         <div class="shopping-cart">
-            <!-- Title -->
             <div class="title">
                 Shopping Cart
             </div>
@@ -47,10 +48,8 @@
                 <div class="description-shoppingcart">
                     <span>Blackberry Cinnamon Bun</span>
                     <br><br>
-                    <span>220 cal/bun</span>
-                    <br><br>
                     <div class="delete">
-                        <button type="button" name="delete" class="delete-btn">REMOVE</button>
+                        <button type="button" name="delete" class="delete-btn" >REMOVE</button>
                     </div>
                 </div>
 
@@ -83,7 +82,7 @@
                 <a id="subtotal" onload="ItemPrice()"></a>
             </div>
             <div class="returntoproductpage">
-                <a type="button" name="backtoproduct" href="blackberrybun.html">back to product</a>
+                <a type="button" name="backtoproduct" href="blackberrybun.html">Back to menu</a>
             </div>
         
         <script src="script.js" type="text/javascript" async></script>
