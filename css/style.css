@@ -1,7 +1,7 @@
 @import "reset.css";
 
 html {
-    background-color: black;
+    background-color: rgb(32, 32, 32);
     padding: 0%;
     color: white;
     font-family: 'Courier New', Courier, monospace;
@@ -9,11 +9,12 @@ html {
 }
 
 .nav {
-    background-color: black;
+    background-color: rgb(20, 20, 20);
     color: white;
-    height: 6em;
+    height: 4em;
     /* position: absolute; */
     /* text-align: center; */
+    margin-bottom: 2%;
 
 }
 
@@ -26,7 +27,7 @@ html {
 .nav a{
     position: fixed;
     margin-left: 2em;
-    margin-top: 3em;
+    margin-top: 1.5em;
     font-weight: 900;
 }
 
@@ -45,10 +46,30 @@ html {
     margin: 2em;
 }
 
+.junwoophoto{
+    width: 60%;
+    margin-left: 8%;
+}
+
+
 .homepageart {
     width: 85%;
     position: absolute;
     left: 10%;
     opacity: 40%;
     
+}
+
+.intro {
+    width: 35%;
+    position: fixed;
+    right: 5%;
+    line-height: 2em;
+    background-color: rgba(53, 53, 53, 0.5);
+    padding: 15px;
+}
+
+.intro a {
+    font-weight: bold;
+    color: burlywood;
 }
