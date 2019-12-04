@@ -21,8 +21,10 @@ body {
 
 #darkmode {
     float: right;
-    background-color: coral;
+    color: white;
+    background-color: black;
     border-radius: 1em;
+    padding: .5em;
 }
 
 .nav {
