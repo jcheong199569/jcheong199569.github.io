@@ -39,6 +39,13 @@ body {
 
 }
 
+#nav {
+    background-color: none;
+    position: fixed;
+    left: 1%;
+
+}
+
 #logo {
     position: fixed;
     width: 10%;
@@ -94,3 +101,15 @@ body {
     font-weight: bold;
     color: burlywood;
 }
+
+#panel, #flip {
+    padding: 5px;
+    text-align: center;
+    background-color: #e5eecc;
+    border: solid 1px #c3c3c3;
+  }
+  
+  #panel {
+    padding: 50px;
+    display: none;
+  }

@@ -14,3 +14,9 @@ typewriter.typeString(JSON.stringify(app))
     .pauseFor(2500)
     .deleteAll()
     .start();
+
+$(document).ready(function(){
+    $("#flip").click(function(){
+    $("#panel").slideToggle("slow");
+});
+});
