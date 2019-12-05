@@ -9,7 +9,7 @@ var typewriter = new Typewriter(app, {
     loop: true
 });
 
-typewriter.typeString('Hi, I am Junwoo.')
+typewriter.typeString(JSON.stringify(app))
     .start()
     .pauseFor(2500)
     .deleteAll()
