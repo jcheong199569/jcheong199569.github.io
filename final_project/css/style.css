@@ -15,8 +15,8 @@ body {
 }
 
 .dark-mode {
-  background-color: rgb(26, 24, 24);
-  color: rgb(255, 247, 231);
+  background-color: rgb(63, 63, 63);
+  color: rgb(235, 235, 235);
 }
 
 #darkmode {
@@ -27,8 +27,9 @@ body {
     border-radius: 1em;
     padding: .5em;
     opacity: .5;
-    position: fixed;
+    position: absolute;
     right: 1%;
+    z-index: 1000;
 }
 
 .nav {
@@ -36,70 +37,41 @@ body {
     color: white;
     height: 4em;
     margin-bottom: 2%;
+    z-index: 1000;
 
 }
 
 #nav {
     background-color: none;
-    position: fixed;
-    left: 1%;
+    color: black;    /* position: fixed;
+    left: 1%; */
+    width: 80%;
 
+}
+
+#navbar {
+    position: sticky;
 }
 
 #logo {
-    position: fixed;
-    width: 10%;
-    left: 5%;
-    /* background-color: white;; */
-    min-width: 100px;
+    width: 30px;
 }
 
-.nav a{
-    position: fixed;
-    margin-left: 2em;
-    margin-top: 1.5em;
-    font-weight: 900;
+#homepageart {
+    max-width: 100%;
+    max-height: 100vh;
+    margin: auto;
 }
 
-.menu {
-    position: fixed;
-    top: 20%;
-    /* left: 1%; */
-
-}
-
-.menu a{
-    color: black;
-    text-decoration: none;
-    display: block;
-    margin: 2em;
-    font-weight: 600;
-    
-}
-
-.junwoophoto{
-    width: 50%;
-    margin-left: 8%;
-}
-
-
-.homepageart {
-    width: 85%;
-    position: absolute;
-    left: 10%;
-    opacity: 40%;
-    
+#imgbox {
+    display: grid;
+    height: 100%;
 }
 
 #intro {
     padding-top: 4%;
     line-height: 2em;
     font-weight: bold;
-}
-
-.intro a {
-    font-weight: bold;
-    color: burlywood;
 }
 
 #panel, #flip {
