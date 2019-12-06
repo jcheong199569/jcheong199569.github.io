@@ -1,10 +1,32 @@
 function darkMode() {
+    //toggling darkmode//
     var element = document.body;
     element.classList.toggle("dark-mode");
+
+    //when changing, logos need to change its color too//
+
+    //changing logo color//
     var logo = document.getElementById("logo");
-    logo.src="asset/SVG/logo-yellow.SVG";
-    var navItem = document.getElementsByClassName("nav-link");
-    // navItem.
+    var logoColor = logo.getAttribute("src");
+
+    if (logoColor == "asset/SVG/logo-darkpurple.svg") {
+        logo.src="asset/SVG/logo-yellow.SVG";
+    } else {
+        logo.src="asset/SVG/logo-darkpurple.svg";
+    };
+
+    //changing button text//
+
+    var buttonText = document.getElementById("darkmode");
+    var buttonTextText = buttonText.innerHTML;
+
+    if (buttonTextText == "Dark") {
+        buttonText.innerHTML = "Light";
+    } else {
+        buttonText.innerHTML = "Dark";
+    };
+
+    
 }
 
 var app = document.getElementById('app');
