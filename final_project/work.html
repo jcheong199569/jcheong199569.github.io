@@ -6,60 +6,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" >
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href="css/hamburgers-master/dist/hamburgers.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css" integrity="sha256-a2tobsqlbgLsWs7ZVUGgP5IvWZsx8bTNQpzsqCSm5mk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" integrity="sha256-c+C87jupO1otD1I5uyxV68WmSLCqtIoNlcHLXtzLCT0=" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="asset/css/style.css">
+
+
     <title>Junwoo Cheong</title>
   </head>
   <body>
     <!-- nav current showing tag -->
     <!-- <li class="nav-item active"> -->
     <!-- <span class="sr-only">(current)</span> -->
-    <button id="darkmode" onclick="darkMode()">Dark</button>
+    <button class="hvr-grow animated fadeInRight slow delay-2s " id="darkmode" onclick="darkMode()">Dark</button>
 
     <a href="homepage.html">
-        <img src="asset/SVG/logo-darkpurple.svg" id="logo">  
+        <img src="asset/image/SVG/logo-darkpurple.svg" class="animated fadeInRight slow delay-1s hvr-grow" id="logo">  
     </a>
 
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="animated fadeInLeft slow delay-1s navbar fixed-top navbar-expand-lg navbar-light" id="navlink">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
           <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" href="work.html">work</a>
+              <a class="nav-link hvr-grow" href="work.html">work</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="fun.html">fun</a>
+              <a class="nav-link hvr-grow" href="fun.html">fun</a>
             </li>
           </ul>
         </div>
     </nav>
 
-    <div class="container mb-5" id="imgbox">
-      <p class="h1 text-center" id="app"></p>
-      <p class="h6 text-center"> Product Designer. <br> Always Curious and Questioning. <br> Seeing the future. <br>Enthusiast.</p>
-      <img class="img-fluid" id="homepageart" src="asset/junu.gif">
-    </div>
-    <div class="container">
-      <div class="row pt-3">
-        <div class=""></div>
-        <div class="col-sm-12 col-md-6 mb-5">
-          <img src="asset/junu2.JPG" class="img-fluid">
-        </div>
+
+    <!-- <div class="jumbotron jumbotron-fluid">
+      <img class="img-fluid" src="asset/image/junu1.png">
+    </div> -->
+
+
+    <div class="container mt-5">
+      <p class="h4 text-center animated fadeIn">Great ideas always start from one simple question.</p>
+
+      <div class="row">
         <div class="col mb-5">
-            <p class="h1">Hi, I am Junwoo Cheong. </p>
-            <br>
-            <p class="h4">I am a student at Carnegie Mellon University, studying <strong>Industrial Design</strong> and <strong>Human Computer Interaction</strong>.</p>
-            <br>
-            <p class="h5">For me, Design is to start with a simple question and end up with an unpredicted result. Knowing what is to come isn't exciting. Great design happens unexpectedly. <br><br> Once I asked a wise man what the final product is going to be. and he answered, <br><br> "Well, we will see." </p>
+          <p class="h2 text-center mt-5">
+            projects
+          </p>
+          <p class="h5 text-center mt-2">
+            Check out where I ended up with a random curiousity. 
+          </p>
+      </div>
+        
+
+
+      <div class="row">
+        <div class="col">
+          <a href="#">
+            <p class="lead hvr-buzz"> What if a fish can swim in one direction forever in a donut shaped fish tank???</p>
+          </a>
+          <img src="asset/image/fish_tank.gif" class="img-fluid">
+        </div>
+        <div class="col">
+          <p class="lead"> What if people in Manilla can complain about their commute?</p>
+
         </div>
       </div>
-      <div class="row pt=3 ">
-        
-      </div>
     </div>
+
+    
+
 
 
   
@@ -69,10 +87,13 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="js/typewriterjs-master/dist/core.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/1.0.0/typewriter.js" integrity="sha256-SdGKPbPTFJNICn+b0KOeEkHSMuz4YAsG/SWmR9gAAAo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vocalizer/1.0.0/vocalizer.min.js" integrity="sha256-DI+FJrGVgFbnfneMF+1Oo56MjLP6Jy07g6Ek2ZyBfOk=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="asset/js/script.js"></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>   
     
   </body>
+  <footer>
+      <small>&copy; Copyright Junwoo Cheong, 2019. All Rights Reserved</small>
+  </footer>
 </html>

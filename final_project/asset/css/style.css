@@ -42,13 +42,6 @@ nav {
 
 }
 
-#nav {
-    background-color: none;
-    color: black;    /* position: fixed;
-    left: 1%; */
-    width: 80%;
-
-}
 
 #navbar {
     position: fixed;
@@ -83,12 +76,17 @@ nav {
 
 #panel, #flip {
     padding: 5px;
-    text-align: center;
-    background-color: #e5eecc;
+    text-align: left;
     border: solid 1px #c3c3c3;
   }
   
-  #panel {
-    padding: 50px;
-    display: none;
-  }
+#panel {
+padding: 50px;
+display: none;
+}
+
+
+footer {
+    font-size: .7em;
+    margin: 3em;
+}

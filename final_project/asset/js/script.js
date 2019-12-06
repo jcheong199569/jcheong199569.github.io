@@ -1,3 +1,9 @@
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideToggle("slow");
+    });
+});
+
 function darkMode() {
     //toggling darkmode//
     var element = document.body;
@@ -17,7 +23,7 @@ function darkMode() {
 
     //changing nav link color//
     var navLink = document.getElementById("navlink");
-    var navLinkColor = navLink.classList[6];
+    var navLinkColor = navLink.classList[7];
 
     if (navLinkColor == "navbar-light") {
         navLink.classList.replace('navbar-light','navbar-dark');
@@ -51,20 +57,7 @@ typewriter.typeString("Junwoo")
     .start()
     .pauseFor(15000);
 
-$(document).ready(function(){
-    $("#flip").click(function(){
-    $("#panel").slideToggle("slow");
-});
-});
 
-var i = 0;
-var txt = 'Lorem ipsum dummy text blabla.';
-var speed = 50;
 
-function typeWriter2() {
-  if (i < txt.length) {
-    document.getElementById("demo").innerHTML += txt.charAt(i);
-    i++;
-    setTimeout(typeWriter, speed);
-  }
-}
+
+
