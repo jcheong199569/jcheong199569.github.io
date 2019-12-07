@@ -68,6 +68,16 @@ nav {
     height: 100%;
 }
 
+.question {
+    background-color: none;
+    text-decoration: none;
+    padding: 2em;
+}
+
+.question li{
+    color: black;
+}
+
 #intro {
     padding-top: 4%;
     line-height: 2em;

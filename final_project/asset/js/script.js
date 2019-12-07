@@ -23,7 +23,7 @@ function darkMode() {
 
     //changing nav link color//
     var navLink = document.getElementById("navlink");
-    var navLinkColor = navLink.classList[7];
+    var navLinkColor = navLink.classList[0];
 
     if (navLinkColor == "navbar-light") {
         navLink.classList.replace('navbar-light','navbar-dark');
