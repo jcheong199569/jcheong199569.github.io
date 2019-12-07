@@ -16,7 +16,7 @@ function darkMode() {
     var logoColor = logo.getAttribute("src");
 
     if (logoColor == "asset/image/SVG/logo-darkpurple.svg") {
-        logo.src="asset/image/SVG/logo-lightpurple.svg";
+        logo.src="asset/image/SVG/logo-yellow.svg";
     } else {
         logo.src="asset/image/SVG/logo-darkpurple.svg";
     };
